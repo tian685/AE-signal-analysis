@@ -12,7 +12,7 @@ import math
 # 获取文件某个通道的数据集，并输出pandas.dataframe数据结构
 def get_dataset(file, tongdao_num=0):
     """
-    获取文件某个通道的数据集，并输出pandas.dataframe数据结构
+    获取文件某个通道的数据集,并输出pandas.dataframe数据结构
     :param file:
     :param tongdao_num:0,1,2,3
     :return: data_frame
@@ -97,7 +97,7 @@ class K_Means(object):
     def k_means_plus_plus(self):
         """
         k-means++算法
-        :return: 样本分类列表point_classify，list
+        :return: 样本分类列表point_classify,list
         """
         n = self.dataset.shape[0]  # 样本的个数
         center_points = self.get_initial_center_points()  # 初始化中心点
@@ -124,10 +124,10 @@ class K_Means(object):
 
     def FCM(self, m, epsilon=0.000000001):
         """
-        FCM算法，m的最佳取值范围为[1.5，2.5]
+        FCM算法,m的最佳取值范围为[1.5,2.5]
         :param m:m 权值
         :param epsilon:终止条件
-        :return: 聚类中心矩阵C，np.array
+        :return: 聚类中心矩阵C,np.array
         """
         U = self.initialise_U()  # 隶属度矩阵
         # print("U: ", U)
@@ -190,7 +190,7 @@ class K_Means(object):
 
     def initialise_U(self):
         """
-        生成初始化隶属度矩阵U，每行加起来是1，输出为np.array结构
+        生成初始化隶属度矩阵U,每行加起来是1,输出为np.array结构
         """
         m = self.dataset.shape[0]
         n = self.cluster_center_number

@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 
-
 class FeatureConstruction(object):
     def __init__(self, data):
         """
