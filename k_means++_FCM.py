@@ -8,7 +8,6 @@ import xlrd
 import xlwt
 import math
 
-
 # 获取文件某个通道的数据集，并输出pandas.dataframe数据结构
 def get_dataset(file, tongdao_num=0):
     """
