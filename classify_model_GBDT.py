@@ -99,7 +99,7 @@ for distance in range(11):
     num_samples = 8  # 信号个数, 8
     gap = 30
     train_scale_X, train_Y, test_scale_X, test_Y = select_test_sets(scale_data1_X, data1_Y, distance, num_samples=num_samples, gap=gap)
-    print('num_samples：', num_samples)
+    print('num_samples:', num_samples)
     print('gap:', gap)
     # print(scale_data0_X.shape)
     # print(test_scale_X.shape)
@@ -155,9 +155,9 @@ for distance in range(11):
             cout_1 += 1
         if i == 2:
             cout_2 += 1
-    print("0类数：", len(test_y)-cout_1-cout_2)
-    print("1类数：", cout_1)
-    print("2类数：", cout_2)
+    print("0类数:", len(test_y)-cout_1-cout_2)
+    print("1类数:", cout_1)
+    print("2类数:", cout_2)
 
 
 # 比较重要的特征
